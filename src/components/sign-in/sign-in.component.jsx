@@ -30,7 +30,7 @@ class SignIn extends React.Component {
             <div className='sign-in'>
                 <h2>I already have an account</h2>
                 <span>Sign in with your email and password</span>
-                <from onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <FormInput name='email' type='email' label='Email' value={this.state.email} required handleChange={this.handleChange} />
                     <FormInput name='password' type='password' label='Password' value={this.state.password} required handleChange={this.handleChange} />
                     <div className='buttons'>
@@ -38,7 +38,7 @@ class SignIn extends React.Component {
                         <CustomButton onClick={signInWithGoogle} isGoogleSignIn>{' '}Sign in with Google {' '}</CustomButton>
                     </div>
 
-                </from>
+                </form>
             </div>
         );
     }
