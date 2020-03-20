@@ -4,19 +4,19 @@ import '../../components/preview-collection/preview-collection.component';
 import CollectionPrewiew from '../../components/preview-collection/preview-collection.component';
 
 class ShopPage extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             collections: SHOP_DATA
         }
     }
 
-    render(){
-        const {collections} = this.state;
+    render() {
+        const { collections } = this.state;
         return (
             <div className='shop-page'>
                 {
-                    collections.map(({ id, ...otherCollectionProps}) => (
+                    collections.map(({ id, ...otherCollectionProps }) => (
                         <CollectionPrewiew key={id} {...otherCollectionProps} />
                     ))
                 }
