@@ -1,6 +1,6 @@
 import React from "react";
 import "../../components/preview-collection/preview-collection.component";
-import CollectionsOverview from "../../components/collection-overview/collection-overview.component";
+import CollectionsOverview from '../../components/collection-overview/collection-overview.component';
 import { Route } from "react-router-dom";
 import collectionPage from "../collection/collection.component";
 
