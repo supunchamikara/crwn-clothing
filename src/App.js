@@ -10,7 +10,10 @@ import Header from "./components/header/header.component";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import "./App.css";
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import {
+  auth,
+  createUserProfileDocument
+} from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.action";
 import { selectCurrentUser } from "./redux/user/user.selector";
